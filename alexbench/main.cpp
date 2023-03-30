@@ -125,14 +125,14 @@ int main(int argc, char* argv[]) {
       auto node = node_it.current();
       if (node->is_leaf_) {
         num++;
-        if(num%8000==0){
+        
         auto datanode = static_cast<alex::AlexDataNode<double, double>*>(node);
         std::cout<<"nodes shifts is "<<datanode->num_shifts_<<std::endl;
         std::cout<<"nodes lookup is "<<datanode->num_lookups_<<std::endl;
         std::cout<<"nodes num_resizes_ is "<<datanode->num_resizes_<<std::endl; 
         std::cout<<"the model parameter is "<<datanode->model_.a_<<" "<<datanode->model_.b_<<" "<<datanode->model_.c_<<std::endl;
           // 处理叶子节点
-        }
+        
       }
     
     }
