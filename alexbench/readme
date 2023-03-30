@@ -1,3 +1,7 @@
+
+先make 然后运行make文件
+
+
 ./main \
 --keys_file=alexbench\longitudes-200M.bin.data \
 --keys_file_type=binary \
@@ -11,7 +15,7 @@
 
 
 ./main \
---keys_file=alexbench\sample_keys.bin
+--keys_file=alexbench\sample_keys.bin \
 --keys_file_type=binary \
 --init_num_keys=500 \
 --total_num_keys=1000 \
