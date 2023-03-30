@@ -1,0 +1,20 @@
+./main \
+--keys_file=alexbench\longitudes-200M.bin.data \
+--keys_file_type=binary \
+--init_num_keys=10000000 \
+--total_num_keys=20000000 \
+--batch_size=1000000 \
+--insert_frac=0.5 \
+--lookup_distribution=zipf \
+--print_batch_stats
+
+
+
+./main \
+--keys_file=alexbench\sample_keys.bin
+--keys_file_type=binary \
+--init_num_keys=500 \
+--total_num_keys=1000 \
+--batch_size=1000 \
+--insert_frac=0.5 \
+--print_batch_stats
